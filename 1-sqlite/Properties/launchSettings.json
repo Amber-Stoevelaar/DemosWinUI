@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SQLite-PoC (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SQLite-PoC (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
