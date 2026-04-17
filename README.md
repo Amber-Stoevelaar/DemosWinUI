@@ -66,9 +66,20 @@ Met meer tijd en toegang tot de juiste Azure‑configuratie kan dezelfde functio
    - Omdat het gaat om een packaged WinUI 3 applicatie, moet de **Package Family Name (PFN)** van de app worden gekoppeld aan de Azure App Registration.
    - Deze koppeling kan niet zelf gedaan worden en moet worden aangevraagd bij Microsoft via: `Win_App_SDK_Push@microsoft.com`
    - Dit is een handmatige stap aan Microsoft‑zijde en heeft een wachttijd van ongeveer 1 week.
+3. **Backend en client koppelen aan WNS**
+Na ontvangst van bevestiging van Microsoft dat de Package Family Name is gekoppeld aan de Azure App Registration, kunnen backend en client worden toegevoegd:
+   * De WinUI 3 applicatie registreert zich bij WNS en ontvangt een push notification channel.
+   * De backend slaat deze channel‑URI op en gebruikt deze om push notifications naar de client te versturen via WNS.
+
 
 ### Demo
-* De WinUI 3 applicatie maakt een SignalR-verbinding met de backend via de 'verbind' button.
-* Vanuit de backend worden berichten verstuurd.
-* De client ontvangt deze berichten in real-time.
-* TODO: uitleg via API
+De WinUI 3 applicatie biedt een interface waarmee een SignalR‑verbinding met de backend kan worden opgezet. Zodra deze verbinding actief is, kunnen berichten vanuit de applicatie worden verstuurd. Deze berichten resulteren in het tonen van een Windows‑notificatie bij de gebruiker.
+
+Daarnaast kunnen berichten ook vanuit de backend worden verstuurd via een API. Door met een externe tool voor het versturen van HTTP‑requests (zoals Postman) een bericht naar de API te sturen, ontvangt de gebruiker op dezelfde manier een notificatie in de WinUI 3 applicatie.
+
+Hoewel SignalR wordt gebruikt voor het versturen van berichten tussen backend en client, wordt het tonen van de notificaties uitgevoerd met de standaard Windows‑notificatie‑functionaliteit.
+
+### Risico's
+Voor deze PoC zijn geen technische risico’s geïdentificeerd.
+
+
