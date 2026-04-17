@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Target only .NET Framework 4.8 for maximum compatibility with the legacy host -->
+    <TargetFramework>net48</TargetFramework>
+    <!-- Use C# 10 to allow file-scoped namespaces and other newer language features -->
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Framework assembly references for .NET Framework WCF builds -->
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+
+</Project>

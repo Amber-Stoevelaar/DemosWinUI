@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WCFclient (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WCFclient (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
