@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="WCFclient/WCFclient.csproj" Id="44846e6d-1a84-4001-b204-319945354a05">
+    <Platform Project="x64" />
+    <Deploy />
+  </Project>
+  <Project Path="WCFhost/WCFhost.csproj" Id="7f924bb2-b04e-4dba-9019-a9380673fbb2" />
+  <Project Path="WfcClassLibrary/WfcClassLibrary.csproj" Id="dfd05078-d267-4009-930f-0c71e39fc92c" />
+</Solution>
