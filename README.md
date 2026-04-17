@@ -35,7 +35,7 @@ Binnen de WinUI 3 applicatie kan vervolgens een nummer worden ingevoerd en verst
 2. WCF is "niet langer aanbevolen"
    - WCF wordt momenteel gewoon in stand gehouden en moderne packages zoals System.ServiceModel zorgen ervoor dat WCF compatibel blijft met nieuwere versies van .NET. Mochten de packages breaking changes krijgen dan werkt de integratie niet meer.
 3. Multi-framework coupling
-   -Omdat er gebruik wordt gemaakt van versies .NET4.8 voor de WCF host en .NET8 voor de WinUI client wordt debuggen en deployment lastiger gemaakt.
+   - Omdat er gebruik wordt gemaakt van versies .NET4.8 voor de WCF host en .NET8 voor de WinUI client wordt debuggen en deployment lastiger gemaakt.
 
 ## 3. Migratie
 
