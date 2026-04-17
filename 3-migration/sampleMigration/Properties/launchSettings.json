@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "sampleMigration (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "sampleMigration (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
